@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: stg_addresses
-    description: Demographics about each superhero such as name, hair color, height and weight. 
+    description: Address info on our users on the platform.
     columns:
       - name: address_id
         description: UUID for each unique address on platform
@@ -16,7 +16,7 @@ models:
         description: country this delivery address is based in
 
   - name: stg_events
-    description: Demographics about each superhero such as name, hair color, height and weight. 
+    description: Tracks events on our website.
     columns:
       - name: event_id
         description: UUID of each unique event on the platform
@@ -36,7 +36,7 @@ models:
         description: If the event is specific to a product
 
   - name: stg_order_items
-    description: Demographics about each superhero such as name, hair color, height and weight. 
+    description: Lists each item that was attached to a particular order_id.
     columns:
       - name: order_id
         description: OrderId of this order
@@ -47,7 +47,7 @@ models:
 
 
   - name: stg_orders
-    description: Demographics about each superhero such as name, hair color, height and weight. 
+    description: List unique orders that occur on our website.
     columns:
       - name: order_id
         description: UUID for each unique order on platform
@@ -78,7 +78,7 @@ models:
 
 
   - name: stg_products
-    description: Demographics about each superhero such as name, hair color, height and weight. 
+    description: Info on all of our products. 
     columns:
       - name: product_id
         description: UUID for each unique product on platform
@@ -91,7 +91,7 @@ models:
 
 
   - name: stg_promos
-    description: Demographics about each superhero such as name, hair color, height and weight. 
+    description: Holds promotional information we have run.
     columns:
       - name: promo_id
         description: Each unique promocode on platform
@@ -101,7 +101,7 @@ models:
         description: Is the promo code active or disabled
 
   - name: stg_users
-    description: Demographics about each superhero such as name, hair color, height and weight. 
+    description: A table that holds relevant information on our users.
     columns:
       - name: user_id
         description: UUID for each unique user on platform
