@@ -6,7 +6,13 @@ sources:
       - name: users
       - name: addresses
       - name: events
+        loaded_at_field: created_at
+        freshness: # make this a little more strict
+          warn_after: {count: 24, period: hour}
       - name: orders
+        loaded_at_field: created_at
+        freshness: # make this a little more strict
+          warn_after: {count: 24, period: hour}
       - name: products
       - name: order_items
       - name: promos
