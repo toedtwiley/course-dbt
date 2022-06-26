@@ -7,6 +7,12 @@ models:
         tests:
           - unique
           - not_null
+      - name: total_units_sold
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 109
+      
   - name: dim_users
     columns:
     - name: user_id
